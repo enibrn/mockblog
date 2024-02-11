@@ -1,0 +1,9 @@
+dendron/node_modules
+dendron/.dendron.*
+dendron/build
+dendron/seeds
+dendron/.next
+dendron/pods/service-connections
+node_modules
+.vitepress/cache
+dist
