@@ -23,6 +23,13 @@ commands:
 workspace:
     vaults:
         -
+            fsPath: dependencies/github.com/enibrn/mockblog-it
+            remote:
+                type: git
+                url: https://github.com/enibrn/mockblog-it
+            selfContained: true
+            name: mockblog-it
+        -
             fsPath: .
             selfContained: true
             name: dendron
@@ -106,3 +113,8 @@ publishing:
     enableTaskNotes: true
     enablePrettyLinks: true
     searchMode: search
+    duplicateNoteBehavior:
+        action: useVault
+        payload:
+            - mockblog-it
+            - dendron
